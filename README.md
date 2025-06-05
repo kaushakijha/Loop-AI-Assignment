@@ -15,6 +15,18 @@ project-root/
 └── README.md
 ```
 
+## 🧠 Brief Explanation of Approach
+
+- **FastAPI** is used to build a modern, high-performance RESTful API for data ingestion and status checking.
+- **Pydantic models** ensure strict validation of input data, including ID type/range and priority enum.
+- **In-memory storage** (Python dicts and lists) is used for fast, simple, and testable state management.
+- **Batching**: IDs are split into batches of up to 3 for rate-limited processing.
+- **Priority queue**: Batches are enqueued with priority (HIGH, MEDIUM, LOW) and processed in order.
+- **Background worker**: A separate thread asynchronously processes batches, respecting the 5-second rate limit.
+- **Status tracking**: Each batch and the overall ingestion request have real-time status updates (`yet_to_start`, `triggered`, `completed`).
+- **Comprehensive testing**: All technical constraints and edge cases are covered in the test suite.
+- **Clear error handling**: All validation and runtime errors return informative, structured responses.
+
 A robust RESTful API system for handling data ingestion requests with priority-based processing, rate limiting, and batch processing capabilities.
 
 ## 🚀 Features
@@ -103,6 +115,17 @@ pytest test_constraints.py::test_priority_processing -v
 ```bash
 deactivate
 ```
+
+## 🧪 Testing
+
+To run the full test suite and verify all constraints:
+
+```bash
+pytest test_constraints.py -v
+```
+Screenshot 2025-06-05 114725.png
+- This will run all tests and show detailed output for each test case.
+- Make sure the server is **not running** when you run the tests (the test client starts its own instance).
 
 ## 🛠️ Technical Implementation
 
