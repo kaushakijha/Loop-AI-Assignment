@@ -131,13 +131,18 @@ Screenshot 2025-06-05 114725.png
 
 ### 1. API Endpoints
 
+
 #### POST /ingest
+![image](https://github.com/user-attachments/assets/0757c77e-28df-497b-8b72-4829be431e34)
+
 
 - Accepts JSON payload with `ids` (list of integers) and `priority` (HIGH/MEDIUM/LOW)
 - Returns a unique `ingestion_id` for tracking
 - Automatically splits IDs into batches of 3
 
 #### GET /status/{ingestion_id}
+![image](https://github.com/user-attachments/assets/e13d13e0-2466-493c-86aa-6c5fdceff790)
+
 
 - Returns current status of the ingestion request
 - Includes overall status and individual batch statuses
