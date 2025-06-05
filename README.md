@@ -371,3 +371,18 @@ curl -X POST "http://localhost:8000/ingest" \
 - Maximum 3 IDs per batch
 - Automatic batch splitting
 - Individual batch status tracking
+
+## 🚀 Deployment
+
+The API is deployed and live at:
+
+[https://loop-ai-assignment-jzol.onrender.com](https://loop-ai-assignment-jzol.onrender.com)
+
+You can test the endpoints directly using this base URL.
+
+- Health check: [https://loop-ai-assignment-jzol.onrender.com](https://loop-ai-assignment-jzol.onrender.com)
+- Example: [https://loop-ai-assignment-jzol.onrender.com/status/<ingestion_id>](https://loop-ai-assignment-jzol.onrender.com/status/%3Cingestion_id%3E)
+
+  ![image](https://github.com/user-attachments/assets/5c39fb5b-644a-4510-94f6-2c824361aea6)
+
+
