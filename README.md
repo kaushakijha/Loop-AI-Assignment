@@ -169,6 +169,9 @@ Screenshot 2025-06-05 114725.png
 ### 3. Testing
 
 Comprehensive test suite covering all technical constraints:
+![image](https://github.com/user-attachments/assets/0ba85097-7c47-4541-ba66-40dc3934ffcc)
+![image](https://github.com/user-attachments/assets/bfd4f938-7197-4126-ab0b-82c68d476d34)
+
 
 1. **Data Persistence Test**
 
