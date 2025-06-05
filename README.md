@@ -1,5 +1,20 @@
 # Data Ingestion API System
 
+## 📁 Project Structure
+
+```
+project-root/
+│
+├── main.py              # FastAPI app
+├── models.py            # Pydantic models
+├── storage.py           # In-memory data + queue
+├── utils.py             # Helper functions
+├── worker.py            # Background processing
+├── test_constraints.py  # Test suite
+├── requirements.txt
+└── README.md
+```
+
 A robust RESTful API system for handling data ingestion requests with priority-based processing, rate limiting, and batch processing capabilities.
 
 ## 🚀 Features
