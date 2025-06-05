@@ -123,9 +123,7 @@ To run the full test suite and verify all constraints:
 ```bash
 pytest test_constraints.py -v
 ```
-
 Screenshot 2025-06-05 114725.png
-
 - This will run all tests and show detailed output for each test case.
 - Make sure the server is **not running** when you run the tests (the test client starts its own instance).
 
@@ -384,3 +382,7 @@ You can test the endpoints directly using this base URL.
 
 - Health check: [https://loop-ai-assignment-jzol.onrender.com](https://loop-ai-assignment-jzol.onrender.com)
 - Example: [https://loop-ai-assignment-jzol.onrender.com/status/<ingestion_id>](https://loop-ai-assignment-jzol.onrender.com/status/%3Cingestion_id%3E)
+
+  ![image](https://github.com/user-attachments/assets/5c39fb5b-644a-4510-94f6-2c824361aea6)
+
+
